@@ -1,25 +1,6 @@
-# SpringBootKeycloak
-Case study: CS20180505
-Name: Navneet Kumar
+# SpringBootKeycloak:
 
-High level system architecture:
-API Gateway provides a tiered pricing model for API requests. Which has auto scaling capabilities as per load 
-
-List of APIs and rationale behind the design: The API’s servers(Resources) shall be as follows:
-/atms
-/branches
-/personal-current-accounts
-/business-current-accounts
-/unsecured-sme-loans
-/insurance
-/mortgage
-/credit
-/debit
-
-
-
-
-The implementation of one non functional requirement:
+The implementation of one non functional requirement::
 
 In my product the whole application shall ask the Keycloak server to authenticate a user for them. After a successful login, the application will receive an identity token and an access token. The identity token contains information about the user such as username, email, and other profile information. The access token is digitally signed by the realm and contains access information (like user role mappings) that the application can use to determine what resources the user is allowed to access on the application.
  
